@@ -75,3 +75,8 @@ yarn-error.log*
 *.pyd
 
 # Keep the project's requirements file in repo root (do not ignore requirements.txt)
+
+# Credentials and secret files
+credentials.py
+ai/credentials.py
+**/credentials.py
