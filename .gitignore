@@ -17,6 +17,8 @@ ai/etc/
 ai/Lib/site-packages/
 ai/__pycache__/
 ai/*.py[cod]
+ai/*.exe
+ai/requirements.txt
 
 # Backup virtualenvs or old copies
 ai_backup_*/
