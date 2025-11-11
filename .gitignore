@@ -3,7 +3,20 @@ venv/
 .venv/
 env/
 ENV/
-ai/
+# NOTE: do not ignore the `ai` project source directory itself (it contains your code).
+# Instead ignore common virtualenv and generated subpaths under `ai/` so source files
+# like ai/main.py remain tracked.
+
+# Ignore virtualenv internals if you keep the venv inside ai/
+ai/Lib/
+ai/Scripts/
+ai/Include/
+ai/pyvenv.cfg
+ai/share/
+ai/etc/
+ai/Lib/site-packages/
+ai/__pycache__/
+ai/*.py[cod]
 
 # Backup virtualenvs or old copies
 ai_backup_*/

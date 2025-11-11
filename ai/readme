@@ -1,0 +1,56 @@
+# Python AI Web Scraper Tutorial - Use AI To Scrape ANYTHING
+# 20251108
+# https://www.youtube.com/watch?v=Oo8-nEuDBkk
+
+# Python Folder: (Does not work with Python 3.14 due to cmake and pyarrow issues)
+# C:\users\aroom\appdata\local\programs\python\python312
+
+# Terminal commands:
+#   Create virtual environment:
+#   C:\users\aroom\appdata\local\programs\python\python312\python -m venv ai
+
+#   Activate the virtual environment:
+#   .\ai\scripts\activate.bat  # If using command line or terminal in VS Studio
+#   .\ai\scripts\activate.ps1  # If using Powershell
+
+# Download requirements.txt from https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbjRONXVPQjQxRi1aamZDaVpPbXFOdG1feHVWd3xBQ3Jtc0tsbHZhSzducDVXYWY2VmZaSlZJUndDNGZOY0ZLVG5iS3pFMVRlbHpicmRNU1FEVWNGWkc5Rjl1WEdRRFVlSHA5VVdEcFJLd00zUnhLelJ4dVhuOGN4LS1kWlVObUhoUTJqYXQ3SkxEOTVLTy1TSEw4MA&q=https%3A%2F%2Fgithub.com%2Ftechwithtim%2FAI-Web-Scraper&v=Oo8-nEuDBkk
+
+""" requirements.txt content:
+streamlit 
+langchain 
+langchain_ollama
+selenium
+beautifulsoup4
+lxml 
+html5lib
+python-dotenv
+"""
+# To update pip:
+# C:\Users\aroom\AppData\Local\Programs\Python\python312\python.exe -m pip install --upgrade pip
+
+# To install the requirements:
+# C:\users\aroom\appdata\local\programs\python\python312\scripts\pip install -r requirements.txt
+
+# If errors with cmake:
+#   You have to download and install cmake from here: https://cmake.org/download/
+#       I downloaded it to c:\Program Files\cmake
+#   It needs to be in windows PATH
+#   From the terminal check the current PATH variable:
+#       $env:Path
+#   Sdd the cmake folder to PATH:
+#       $env:Path = "C:\Program Files\cmake\bin;" + $env:Path
+
+#   This didn't work for cmake in VS Studio:
+#       Open the command prompt from Windows
+#       To check what is currently in PATH: 
+#           echo %PATH%
+#       To add cmake to PATH: 
+#           set PATH=C:\Programs\cmake\bin;%PATH%
+#       To check if cmake is in the PATH:
+#           cmake --version
+
+
+# To run the streamlit app:
+# streamlit run .\ai\main.py
+# or
+# .\scripts\python -m streamlit run main.py
