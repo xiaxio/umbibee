@@ -1,0 +1,62 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+ai/
+
+# Backup virtualenvs or old copies
+ai_backup_*/
+
+# Python cache and packaging
+__pycache__/
+*.py[cod]
+*$py.class
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+eggs/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Locale / env
+.env
+*.env
+secrets.txt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Database files
+*.sqlite3
+
+# Node / other
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Ignore distribution artifacts
+*.whl
+
+# Ignore compiled extensions
+*.so
+*.pyd
+
+# Keep the project's requirements file in repo root (do not ignore requirements.txt)
